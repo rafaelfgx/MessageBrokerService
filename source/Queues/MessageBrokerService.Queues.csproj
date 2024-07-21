@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="..\RabbitMQ\MessageBrokerService.RabbitMQ.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="MessageBrokerService.RabbitMQ" />
+    </ItemGroup>
+</Project>

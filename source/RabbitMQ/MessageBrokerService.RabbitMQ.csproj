@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="RabbitMQ.Client" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="RabbitMQ.Client" />
+        <Using Include="RabbitMQ.Client.Events" />
+        <Using Include="System.Text" />
+        <Using Include="System.Text.Json" />
+    </ItemGroup>
+</Project>
