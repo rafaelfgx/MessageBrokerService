@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Queues\MessageBrokerService.Queues.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Using Include="MessageBrokerService.Queues" />
+        <Using Include="MessageBrokerService.RabbitMQ" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+# docker compose up --detach --build --force-recreate --remove-orphans
+services:
+    rabbitmq:
+        image: "rabbitmq:management"
+        container_name: "rabbitmq"
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+        environment:
+            RABBITMQ_DEFAULT_USER: "admin"
+            RABBITMQ_DEFAULT_PASS: "P4ssW0rd!"
+        volumes:
+            - rabbitmq:/var/lib/rabbitmq
+volumes:
+  rabbitmq:
